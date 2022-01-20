@@ -51,12 +51,12 @@ git commit -m "add data - phase 1"
 ### 2. Setup the Remote for Storing Tracked Data & Models
 
 - Go to the Azure Portal & create a **Storage Account** (here, we name it `dvcdemo`)
-  ![](./images/azure_create_storage_account.png)
+  ![Creating a Storage Account on Azure](./images/azure_create_storage_account.png)
 
 - Within the storage account, create a **Container** (here, we name it `demo20jan2022`)
 
 - Obtain the **Connection String** from the storage account as follows:
-  ![](./images/azure_connection_string.png) 
+  ![Obtaining the Connection String for a Storage Account on Azure](./images/azure_connection_string.png) 
 
 - Install the Azure CLI from [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli) & log into Azure from within the terminal using `az login`
 
@@ -133,6 +133,8 @@ uvicorn main:app --port=8000
 ```
 
 Go to `http://localhost:8000/docs` & play with the endpoints present in the interactive documentation. 
+
+![Swagger Interactive API Documentation for our Server](./images/api_server_docs.png)
 
 For the individual inference, you could use teh following data:
 

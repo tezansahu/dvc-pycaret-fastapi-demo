@@ -118,6 +118,13 @@ Now, create a `server/` folder & place the `main.py` file in it after downloaidn
 - Inferencing on an individual record
 - Batch inferencing on a CSV file
 
+We commit this to our repo:
+
+```bash
+git add server/
+git commit -m "create basic fastapi server"
+```
+
 Now, we can run our local server on port 8000
 
 ```bash
